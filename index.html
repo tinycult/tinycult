@@ -19,7 +19,7 @@
   <div class="image-container" id="mobile-image-container">
     <img class="image" src="https://cdn.shopify.com/s/files/1/0337/2898/7195/files/square_black.png?v=1679941373">
    </div>
-  <div class="image-container" id="desktop-image-container" style="display:none">
+  <div class="image-container" id="desktop-image-container">
     <img class="image" src="https://cdn.shopify.com/s/files/1/0337/2898/7195/files/tinycultblacklogo.png?v=1679940450">
    </div>
 </div>
@@ -49,6 +49,10 @@
    margin-top:10px; 
   }
   
+  #desktop-image-container {
+   display:none; 
+  }
+  
   .image {
    width: 100%;
     max-width: 100%;
@@ -57,7 +61,7 @@
   @media screen and (min-width: 767px) {
   
     #desktop-image-container {
-    display:initial!important;
+    display:inline-block!important;
     }
     
     #mobile-image-container {
