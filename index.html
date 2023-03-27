@@ -2,9 +2,9 @@
 <html>
   
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
    <head>
       
 <body>
@@ -16,7 +16,10 @@
   Dream Of
     </p>
   </div>
-  <div class="image-container">
+  <div class="image-container" id="mobile-image-container">
+    <img class="image" src="https://cdn.shopify.com/s/files/1/0337/2898/7195/files/square_black.png?v=1679941373">
+   </div>
+  <div class="image-container" id="desktop-image-container" style="display:none">
     <img class="image" src="https://cdn.shopify.com/s/files/1/0337/2898/7195/files/tinycultblacklogo.png?v=1679940450">
    </div>
 </div>
@@ -50,6 +53,16 @@
    width: 100%;
     max-width: 100%;
   }
+  
+  @media only screen and (min-width: 767px) {
+  #desktop-image-container {
+    display:initial;
+  }
+    
+    #mobile-image-container {
+      display:none;
+    }
+}
   
   
 </style>
